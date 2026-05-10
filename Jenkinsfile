@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        gradle 'Gradle'
+        gradle 'gradle'
         jdk 'JDK'
     }
 
@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                url: 'https://github.com/YourUsername/GradleApp.git'
+                url: 'https://github.com/brundhas26/GradleApp.git'
             }
         }
 
